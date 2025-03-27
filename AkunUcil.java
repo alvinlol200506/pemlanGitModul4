@@ -1,4 +1,4 @@
-public class InformasiAkun {
+public class AkunUcil {
     private int saldo;
     private String nomorPelanggan;
     private String nama;
@@ -10,6 +10,7 @@ public class InformasiAkun {
     public void checkNomorPelanggan(){
         if (nomorPelanggan.equals("3825180005")){
             setNama("Mang Ucil");
+            setSaldo(saldo);
         } else if (nomorPelanggan.equals("5623300207")){
             setNama("Hatsune Miko");
         } else if (nomorPelanggan.equals("7420400510")){
