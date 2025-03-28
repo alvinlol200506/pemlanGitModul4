@@ -10,7 +10,8 @@ public class AkunUcil {
     public void checkNomorPelanggan(){
         if (nomorPelanggan.equals("3825180005")){
             setNama("Mang Ucil");
-            setSaldo(saldo);
+            setSaldo(100000);
+            
         } else if (nomorPelanggan.equals("5623300207")){
             setNama("Hatsune Miko");
         } else if (nomorPelanggan.equals("7420400510")){
