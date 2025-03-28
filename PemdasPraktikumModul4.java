@@ -10,7 +10,8 @@ public class PemdasPraktikumModul4 {
         nomorBca = input.nextLine();
         if (nomorBca.equals("3825180005")){
             System.out.println("Masukkan Pin kahanda: ");
-            info.checkNomorPelanggan();
+            int pin = input.nextLine();
+            info.
         } else if (nomorBca.equals("5623300207")){
             System.out.println("Masukkan Pin kahanda: ");
         } else if (nomorBca.equals("7420400510")){
