@@ -16,7 +16,7 @@ public class InformasiAkun {
             case "3825180005" -> { // Enhanced switch case agar setiap di akhir case ndak perlu "break;"
                 setNama("Mang Ucil");
 
-                System.out.println("Selamat Siang " + nama + " :)\nIsi saldo anda adalah: Rp" + saldoUcil);
+                System.out.println("Selamat Siang " + nama + " :)\nIsi saldo anda ssaat ini adalah: Rp" + saldoUcil);
                 if (saldoUcil < 10000){
                     System.out.println("Maaf transaksi di swalayan ini minimal Rp10.000,00 di saldo\nAdios amigos");
                     System.exit(0);
