@@ -13,7 +13,7 @@ public class InformasiAkun {
 
     public void checkNomorPelanggan(){
         switch (nomorPelanggan) {
-            case "3825180005" -> {
+            case "3825180005" -> { // Enhanced switch case agar setiap di akhir case ndak perlu "break;"
                 setNama("Mang Ucil");
 
                 System.out.println("Selamat Siang " + nama + " :)\nIsi saldo anda adalah: Rp" + saldoUcil);
