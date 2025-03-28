@@ -14,16 +14,25 @@ public class PemdasPraktikumModul4 {
                 {
                     System.out.println("Masukkan Pin kahanda: ");
                     String pin;
-                    pin = input.nextLine();
-                    if (pin.equals("200506")){
-                        info.setNomorPelanggan("3825180005");
-                        info.checkNomorPelanggan();
-                        break;
-                    } else {
-                        System.out.println("pin salahhhhh");
-                        break;
+                    byte wrongCheck = 0;
+                    while(true){
+                        pin = input.nextLine();
+                        if (pin.equals("200506")){
+                            info.setNomorPelanggan("3825180005");
+                            info.checkNomorPelanggan();
+                            break;
+                        } else {
+                            System.out.println("pin salahhhhh");
+                            wrongCheck++;
+                            if(wrongCheck>=3){
+                                System.out.println("Nomor anda telah diblokir (reason: gagal autentifikasi 3x)");
+                                System.exit(0);
+                            }
+
+                        }
                     }
-                }
+
+                } break;
                 case "5623300207":
                     System.out.println("Masukkan Pin kahanda: ");
                     break;
