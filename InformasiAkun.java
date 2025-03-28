@@ -17,6 +17,11 @@ public class InformasiAkun {
                 setNama("Mang Ucil");
 
                 System.out.println("Selamat Siang " + nama + " :)\nIsi saldo anda adalah: Rp" + saldoUcil);
+                if (saldoUcil < 10000){
+                    System.out.println("Maaf transaksi di swalayan ini minimal Rp10.000,00 di saldo\nAdios amigos");
+                    System.exit(0);
+                }
+
                 System.out.println("Masukkan jenis transaksi yang anda kehendaki:\n1. Pembelian\n2. Top up\n(masukkan angka 1 / 2):  ");
                 int niat = input.nextInt();
 
