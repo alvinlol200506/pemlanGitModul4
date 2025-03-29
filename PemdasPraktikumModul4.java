@@ -25,7 +25,7 @@ public class PemdasPraktikumModul4 {
                             System.out.println("pin salahhhhh");
                             wrongCheck++;
                             if(wrongCheck>=3){
-                                System.out.println("Nomor anda telah diblokir (reason: gagal autentifikasi 3x)");
+                                System.out.println("Nomor anda telah diblokir (reason: gagal autentifikasi 3x)\nAdios amigos o7");
                                 System.exit(0);
                             }
 
@@ -34,11 +34,51 @@ public class PemdasPraktikumModul4 {
 
                 } break;
                 case "5623300207":
+                {
                     System.out.println("Masukkan Pin kahanda: ");
-                    break;
+                    String pin;
+                    byte wrongCheck = 0;
+                    while(true){
+                        pin = input.nextLine();
+                        if (pin.equals("123456")){
+                            info.setNomorPelanggan("5623300207");
+                            info.checkNomorPelanggan();
+                            break;
+                        } else {
+                            System.out.println("pin salahhhhh");
+                            wrongCheck++;
+                            if(wrongCheck>=3){
+                                System.out.println("Nomor anda telah diblokir (reason: gagal autentifikasi 3x)\nAdios amigos o7");
+                                System.exit(0);
+                            }
+
+                        }
+                    }
+
+                } break;
                 case "7420400510":
+                {
                     System.out.println("Masukkan Pin kahanda: ");
-                    break;
+                    String pin;
+                    byte wrongCheck = 0;
+                    while(true){
+                        pin = input.nextLine();
+                        if (pin.equals("030772")){
+                            info.setNomorPelanggan("7420400510");
+                            info.checkNomorPelanggan();
+                            break;
+                        } else {
+                            System.out.println("pin salahhhhh");
+                            wrongCheck++;
+                            if(wrongCheck>=3){
+                                System.out.println("Nomor anda telah diblokir (reason: gagal autentifikasi 3x)\nAdios amigos o7");
+                                System.exit(0);
+                            }
+
+                        }
+                    }
+
+                } break;
                 case "exit":
                     System.exit(0);
                 default:
